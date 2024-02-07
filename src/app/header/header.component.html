@@ -1,0 +1,24 @@
+<header class="main-header">
+    <h1 class="main-header__title">
+        <span class="main-header__title--blue">ProWay</span><span class="main-header__title--orange">Computers</span>
+    </h1>
+    <div class="container-menu">
+        <nav class="main-header__menu ul">
+            <ul>
+                <li><a routerLink="/produtos">Produtos</a></li>
+                <li>
+                    <a routerLink="/carrinho">
+                        Carrinho
+                        <span class="badge-carrinho"> {{ carrinhoService.obtemCarrinho().length }} </span>
+                    </a>
+                </li>
+                <li><a routerLink="/contato">Contato</a></li>
+                <li><a>Insta</a></li>
+                <li><a>Twitter</a></li>
+                <li><a>Face</a></li>
+            </ul>
+        </nav>
+        <app-barra-pesquisa></app-barra-pesquisa>
+    </div>
+</header>
+
